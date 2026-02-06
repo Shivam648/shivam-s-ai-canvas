@@ -55,8 +55,9 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* CTA */}
-            <div className="hidden md:block">
+            {/* Theme toggle + CTA */}
+            <div className="hidden md:flex items-center gap-2">
+              <ThemeToggle />
               <Button variant="hero" size="sm" asChild>
                 <a href="#contact">Hire Me</a>
               </Button>
