@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -54,25 +55,29 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* CTA */}
-            <div className="hidden md:block">
+            {/* Theme toggle + CTA */}
+            <div className="hidden md:flex items-center gap-2">
+              <ThemeToggle />
               <Button variant="hero" size="sm" asChild>
                 <a href="#contact">Hire Me</a>
               </Button>
             </div>
 
-            {/* Mobile menu button */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+            {/* Theme toggle + Mobile menu button */}
+            <div className="md:hidden flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                className="p-2"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </motion.nav>
@@ -97,6 +102,12 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <div className="pt-4 border-t border-border">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm text-muted-foreground">Theme</span>
+                  <ThemeToggle />
+                </div>
+              </div>
               <Button variant="hero" className="w-full mt-4" asChild>
                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                   Hire Me

@@ -12,7 +12,7 @@
 
 @layer base {
   :root {
-    /* Core palette - Deep sophisticated navy with vibrant teal accents */
+    /* Dark mode - Deep sophisticated navy with vibrant teal accents */
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
 
@@ -69,6 +69,64 @@
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 217 33% 18%;
     --sidebar-ring: 174 72% 56%;
+  }
+
+  [data-theme="light"] {
+    /* Light mode - Clean, minimal light palette */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 6%;
+
+    --card: 210 40% 96%;
+    --card-foreground: 222 47% 6%;
+
+    --popover: 210 40% 96%;
+    --popover-foreground: 222 47% 6%;
+
+    /* Primary - Same teal, but adjusted for light */
+    --primary: 174 72% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Light slate */
+    --secondary: 210 40% 92%;
+    --secondary-foreground: 222 47% 6%;
+
+    /* Muted surfaces */
+    --muted: 210 40% 90%;
+    --muted-foreground: 217 33% 40%;
+
+    /* Accent */
+    --accent: 280 70% 55%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 210 40% 88%;
+    --input: 210 40% 88%;
+    --ring: 174 72% 50%;
+
+    /* Custom tokens */
+    --glow-primary: 174 72% 50%;
+    --glow-accent: 280 70% 55%;
+    --gradient-start: 174 72% 50%;
+    --gradient-end: 199 89% 45%;
+    
+    /* Illustration colors */
+    --illustration-bg: 210 40% 92%;
+    --illustration-stroke: 174 72% 50%;
+    --illustration-fill: 210 40% 88%;
+
+    /* Sidebar */
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 6%;
+    --sidebar-primary: 174 72% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 92%;
+    --sidebar-accent-foreground: 222 47% 6%;
+    --sidebar-border: 210 40% 88%;
+    --sidebar-ring: 174 72% 50%;
   }
 
   /* Typography system */
