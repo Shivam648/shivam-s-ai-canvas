@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FileText, Database, Brain, MessageSquare, Workflow, Sparkles } from "lucide-react";
+import ThemeAwareImage from "@/components/ThemeAwareImage";
 import aiLabIllustration from "@/assets/ai-lab-illustration.jpg";
 
 const aiCapabilities = [
