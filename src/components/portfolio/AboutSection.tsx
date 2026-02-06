@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import ThemeAwareImage from "@/components/ThemeAwareImage";
 import aboutIllustration from "@/assets/about-illustration.jpg";
 
 const AboutSection = () => {
