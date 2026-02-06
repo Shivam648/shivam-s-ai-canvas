@@ -102,6 +102,12 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <div className="pt-4 border-t border-border">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm text-muted-foreground">Theme</span>
+                  <ThemeToggle />
+                </div>
+              </div>
               <Button variant="hero" className="w-full mt-4" asChild>
                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                   Hire Me
