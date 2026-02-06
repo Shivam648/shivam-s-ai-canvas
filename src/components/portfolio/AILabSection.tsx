@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FileText, Database, Brain, MessageSquare, Workflow, Sparkles } from "lucide-react";
+import ThemeAwareImage from "@/components/ThemeAwareImage";
 import aiLabIllustration from "@/assets/ai-lab-illustration.jpg";
 
 const aiCapabilities = [
@@ -51,10 +52,11 @@ const AILabSection = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-3xl" />
-                <img 
+                <ThemeAwareImage 
                   src={aiLabIllustration} 
                   alt="RAG pipeline and AI systems visualization" 
                   className="relative rounded-2xl border border-border/50 shadow-2xl"
+                  variant="card"
                 />
               </div>
             </motion.div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import ThemeAwareImage from "@/components/ThemeAwareImage";
 import aboutIllustration from "@/assets/about-illustration.jpg";
 
 const AboutSection = () => {
@@ -90,10 +91,11 @@ const AboutSection = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl" />
-              <img 
+              <ThemeAwareImage 
                 src={aboutIllustration} 
                 alt="Developer journey from learning to scaling" 
                 className="relative rounded-2xl border border-border/50 shadow-2xl"
+                variant="card"
               />
             </div>
           </motion.div>

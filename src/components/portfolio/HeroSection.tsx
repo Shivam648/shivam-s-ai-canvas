@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeAwareImage from "@/components/ThemeAwareImage";
 import heroIllustration from "@/assets/hero-illustration.jpg";
 
 const HeroSection = () => {
@@ -17,10 +18,11 @@ const HeroSection = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute inset-0"
       >
-        <img 
+        <ThemeAwareImage 
           src={heroIllustration} 
           alt="Developer workspace with AI and frontend elements" 
           className="w-full h-full object-cover opacity-40"
+          variant="hero"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </motion.div>

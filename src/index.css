@@ -283,6 +283,29 @@
   }
 }
 
+/* Theme-aware image filters for light mode */
+@layer utilities {
+  /* Base light mode adjustment */
+  .theme-image-light {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  /* Hero variant - softer inversion with brightness boost */
+  .theme-image-hero {
+    filter: invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.95) saturate(1.1);
+  }
+
+  /* Card variant - balanced for illustrations */
+  .theme-image-card {
+    filter: invert(0.88) hue-rotate(180deg) brightness(1.05) contrast(0.9) saturate(1.15);
+  }
+
+  /* Subtle variant - minimal adjustment */
+  .theme-image-subtle {
+    filter: invert(0.85) hue-rotate(180deg) brightness(1.15) contrast(0.85) saturate(1.2);
+  }
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
