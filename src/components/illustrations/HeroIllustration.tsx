@@ -20,9 +20,9 @@ const HeroIllustration = () => {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
         <div className="flex gap-1.5 mb-2">
-          <div className="w-2 h-2 rounded-full bg-red-400/80" />
-          <div className="w-2 h-2 rounded-full bg-yellow-400/80" />
-          <div className="w-2 h-2 rounded-full bg-green-400/80" />
+          <div className="w-2 h-2 rounded-full bg-destructive/80" />
+          <div className="w-2 h-2 rounded-full bg-accent/80" />
+          <div className="w-2 h-2 rounded-full bg-primary/80" />
         </div>
         <div className="space-y-1">
           <div className="h-1.5 w-16 bg-primary/40 rounded" />

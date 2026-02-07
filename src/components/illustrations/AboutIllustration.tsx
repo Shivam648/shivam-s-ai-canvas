@@ -110,9 +110,9 @@ const AboutIllustration = () => {
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
           <div className="flex gap-1 mb-1">
-            <div className="w-1.5 h-1.5 rounded-full bg-red-400/60" />
-            <div className="w-1.5 h-1.5 rounded-full bg-yellow-400/60" />
-            <div className="w-1.5 h-1.5 rounded-full bg-green-400/60" />
+            <div className="w-1.5 h-1.5 rounded-full bg-destructive/60" />
+            <div className="w-1.5 h-1.5 rounded-full bg-accent/60" />
+            <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
           </div>
           <div className="space-y-0.5">
             <div className="h-1 w-10 bg-primary/30 rounded" />

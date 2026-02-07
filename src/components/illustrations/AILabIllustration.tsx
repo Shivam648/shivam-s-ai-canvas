@@ -153,8 +153,8 @@ const AILabIllustration = () => {
           transition={{ delay: 2.5 }}
         >
           <div className="flex items-center gap-2">
-            <motion.div
-              className="w-2 h-2 rounded-full bg-green-400"
+              <motion.div
+                className="w-2 h-2 rounded-full bg-emerald-400 dark:bg-green-400"
               animate={{ opacity: [1, 0.5, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
             />
