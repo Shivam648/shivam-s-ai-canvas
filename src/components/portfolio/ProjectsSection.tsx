@@ -86,7 +86,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay: 0.2 + index * 0.2, duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
-      className="perspective-1000"
+      className="perspective-1000 h-full"
     >
       <motion.div
         ref={cardRef}
@@ -102,12 +102,12 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
           animate={{ opacity: isHovered ? 0.4 : 0 }}
         />
         
-        <div className="relative rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-primary/30">
+        <div className="relative h-full rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-primary/30 flex flex-col">
           {/* Top gradient bar */}
           <div className={`h-1 bg-gradient-to-r ${project.gradient}`} />
           
           {/* Content */}
-          <div className="p-6 lg:p-8">
+          <div className="p-6 lg:p-8 flex-1 flex flex-col">
             {/* Header */}
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-4">
@@ -194,6 +194,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
               initial={{ opacity: 0 }}
               animate={isHovered ? { opacity: 1 } : { opacity: 0.7 }}
               transition={{ duration: 0.3 }}
+              className="mt-auto pt-4"
             >
               <Button 
                 variant="ghost" 
@@ -266,7 +267,7 @@ const ProjectsSection = () => {
         </motion.div>
 
         {/* Projects Grid with 3D cards */}
-        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
           {projects.map((project, index) => (
             <ProjectCard 
               key={project.title} 
