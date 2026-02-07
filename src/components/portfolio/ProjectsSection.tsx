@@ -102,12 +102,12 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
           animate={{ opacity: isHovered ? 0.4 : 0 }}
         />
         
-        <div className="relative rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-primary/30">
+        <div className="relative h-full rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-primary/30 flex flex-col">
           {/* Top gradient bar */}
           <div className={`h-1 bg-gradient-to-r ${project.gradient}`} />
           
           {/* Content */}
-          <div className="p-6 lg:p-8">
+          <div className="p-6 lg:p-8 flex-1 flex flex-col">
             {/* Header */}
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-4">
