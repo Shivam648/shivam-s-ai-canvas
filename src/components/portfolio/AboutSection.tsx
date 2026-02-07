@@ -87,15 +87,7 @@ const AboutSection = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="order-1 lg:order-2"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl" />
-              <ThemeAwareImage 
-                src={aboutIllustration} 
-                alt="Developer journey from learning to scaling" 
-                className="relative rounded-2xl border border-border/50 shadow-2xl"
-                variant="card"
-              />
-            </div>
+            <AboutIllustration />
           </motion.div>
         </motion.div>
       </div>

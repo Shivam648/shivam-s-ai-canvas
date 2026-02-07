@@ -48,15 +48,7 @@ const AILabSection = () => {
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-3xl" />
-                <ThemeAwareImage 
-                  src={aiLabIllustration} 
-                  alt="RAG pipeline and AI systems visualization" 
-                  className="relative rounded-2xl border border-border/50 shadow-2xl"
-                  variant="card"
-                />
-              </div>
+              <AILabIllustration />
             </motion.div>
 
             {/* Capabilities grid */}
