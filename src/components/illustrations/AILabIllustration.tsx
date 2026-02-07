@@ -62,7 +62,7 @@ const AILabIllustration = () => {
                     transition={{ delay: index * 0.2 + 0.3, duration: 0.4 }}
                   >
                     <motion.div
-                      className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 border-t-2 border-r-2 border-primary/50 rotate-45"
+                      className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 border-t-2 border-r-2 border-primary/50 rotate-45 -translate-x-0.5"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: index * 0.2 + 0.5 }}
