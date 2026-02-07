@@ -194,6 +194,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
               initial={{ opacity: 0 }}
               animate={isHovered ? { opacity: 1 } : { opacity: 0.7 }}
               transition={{ duration: 0.3 }}
+              className="mt-auto pt-4"
             >
               <Button 
                 variant="ghost" 

@@ -99,7 +99,7 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ delay: 0.2 + clusterIndex * 0.15, duration: 0.6 }}
-              className={`relative group ${cluster.featured && clusterIndex === 0 ? 'md:row-span-2' : ''}`}
+              className="relative group"
               onMouseEnter={() => setHoveredSkill(cluster.title)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
