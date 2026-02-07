@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ThemeAwareImage from "@/components/ThemeAwareImage";
-import heroIllustration from "@/assets/hero-illustration.jpg";
-
+import HeroIllustration from "@/components/illustrations/HeroIllustration";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -13,18 +11,13 @@ const HeroSection = () => {
       
       {/* Hero illustration background */}
       <motion.div 
-        initial={{ opacity: 0, scale: 1.1 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute inset-0"
+        className="absolute inset-0 pointer-events-none"
       >
-        <ThemeAwareImage 
-          src={heroIllustration} 
-          alt="Developer workspace with AI and frontend elements" 
-          className="w-full h-full object-cover opacity-40"
-          variant="hero"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        <HeroIllustration />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
       </motion.div>
 
       {/* Floating elements */}

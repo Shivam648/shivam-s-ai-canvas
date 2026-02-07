@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import ThemeAwareImage from "@/components/ThemeAwareImage";
-import aboutIllustration from "@/assets/about-illustration.jpg";
-
+import AboutIllustration from "@/components/illustrations/AboutIllustration";
 const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -89,15 +87,7 @@ const AboutSection = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="order-1 lg:order-2"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl" />
-              <ThemeAwareImage 
-                src={aboutIllustration} 
-                alt="Developer journey from learning to scaling" 
-                className="relative rounded-2xl border border-border/50 shadow-2xl"
-                variant="card"
-              />
-            </div>
+            <AboutIllustration />
           </motion.div>
         </motion.div>
       </div>
