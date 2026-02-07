@@ -267,7 +267,7 @@ const ProjectsSection = () => {
         </motion.div>
 
         {/* Projects Grid with 3D cards */}
-        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
           {projects.map((project, index) => (
             <ProjectCard 
               key={project.title} 

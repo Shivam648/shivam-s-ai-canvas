@@ -92,7 +92,7 @@ const SkillsSection = () => {
         </motion.div>
 
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 auto-rows-fr">
           {skillClusters.map((cluster, clusterIndex) => (
             <motion.div
               key={cluster.title}
