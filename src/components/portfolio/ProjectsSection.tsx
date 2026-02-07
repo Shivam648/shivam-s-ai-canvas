@@ -86,7 +86,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay: 0.2 + index * 0.2, duration: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
-      className="perspective-1000"
+      className="perspective-1000 h-full"
     >
       <motion.div
         ref={cardRef}
