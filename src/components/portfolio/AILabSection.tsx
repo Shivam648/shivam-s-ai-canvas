@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { FileText, Database, Brain, MessageSquare, Workflow, Sparkles } from "lucide-react";
-import ThemeAwareImage from "@/components/ThemeAwareImage";
-import aiLabIllustration from "@/assets/ai-lab-illustration.jpg";
-
+import AILabIllustration from "@/components/illustrations/AILabIllustration";
 const aiCapabilities = [
   { icon: FileText, title: "Data Ingestion", desc: "Process documents, PDFs, and structured data" },
   { icon: Database, title: "Vector Storage", desc: "Embed and store knowledge in vector DBs" },
