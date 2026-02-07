@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ThemeAwareImage from "@/components/ThemeAwareImage";
-import heroIllustration from "@/assets/hero-illustration.jpg";
-
+import HeroIllustration from "@/components/illustrations/HeroIllustration";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
