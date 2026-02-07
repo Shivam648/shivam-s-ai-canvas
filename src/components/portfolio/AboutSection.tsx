@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import ThemeAwareImage from "@/components/ThemeAwareImage";
-import aboutIllustration from "@/assets/about-illustration.jpg";
-
+import AboutIllustration from "@/components/illustrations/AboutIllustration";
 const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
