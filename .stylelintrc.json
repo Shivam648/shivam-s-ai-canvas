@@ -1,0 +1,9 @@
+{
+  "ignoreFiles": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.jsx",
+    "node_modules/**"
+  ],
+  "rules": {}
+}

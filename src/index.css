@@ -8,7 +8,7 @@
   Style: Illustration-led, professional, tech-forward
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -131,9 +131,10 @@
 
   /* Typography system */
   html {
-    font-family: 'Inter', system-ui, sans-serif;
-    scroll-behavior: smooth;
     font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -157,26 +158,28 @@
     @apply border-border;
   }
 
-  /* Display font for headings */
+  /* Display font for headings (reference: Plus Jakarta Sans) */
   h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'Sora', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     letter-spacing: -0.02em;
   }
 
+  /* Match reference scale: large hero headings like text-6xl / md:text-8xl */
   h1 {
-    font-size: clamp(2.8rem, 5vw, 3.6rem);
-    font-weight: 700;
-    line-height: 1.1;
+    font-size: clamp(3.75rem, 6vw, 6rem);
+    font-weight: 800;
+    line-height: 1.05;
   }
 
+  /* Reference: text-4xl / md:text-5xl */
   h2 {
-    font-size: clamp(2rem, 4vw, 2.6rem);
-    font-weight: 600;
-    line-height: 1.2;
+    font-size: clamp(2.25rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
   }
 
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 600;
   }
 
