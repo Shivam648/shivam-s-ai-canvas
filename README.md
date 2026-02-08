@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# Shivam Jaiswal – Portfolio Website 🚀
 
-## Project info
+![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?logo=netlify&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-UI-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwind-css&logoColor=white)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🌐 Live Website
 
-There are several ways of editing your application.
+🔗 **Production**  
+https://itsmeshivamjaiswal.in  
 
-**Use Lovable**
+🔗 **Netlify Preview**  
+https://itsmeshivamjaiswal.netlify.app  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 👋 About This Project
 
-**Use your preferred IDE**
+This repository contains my **personal portfolio website**, built to showcase my work as a:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+> **Frontend Engineer × AI Developer**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The goal of this project is not just visual appeal, but to demonstrate:
+- Real-world frontend architecture
+- Clean, scalable UI patterns
+- Performance-first development
+- Production-grade deployment with SSL & custom domain
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧠 Case Study: Design & Engineering Decisions
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🎯 Problem
+Most developer portfolios:
+- Look visually good but lack depth
+- Don’t explain *how* things are built
+- Aren’t optimized for recruiters or hiring managers
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 💡 Solution
+I designed and built a **single-page portfolio** that:
+- Loads fast
+- Communicates expertise clearly
+- Balances design + engineering
+- Scales for future AI experiments and labs
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+### 🎨 Design Philosophy
+- Dark, modern UI with subtle gradients
+- Clear typography hierarchy
+- Motion used with intent (not decoration)
+- Minimal but expressive visuals
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 🛠 Engineering Choices
+| Decision | Reason |
+|-------|------|
+| Vite | Fast dev server & optimized builds |
+| React + TypeScript | Predictable, scalable UI |
+| Tailwind CSS | Utility-first, consistent design |
+| shadcn/ui | Accessible, composable components |
+| Netlify | Zero-config CI/CD, SSL, and domain management |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## ✨ Features
 
-This project is built with:
+- Fully responsive layout
+- Smooth scroll-based navigation
+- Animated hero and section transitions
+- SEO-friendly structure
+- Custom domain + HTTPS
+- Continuous deployment via GitHub
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📂 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```txt
+src/
+ ├─ components/     # Reusable UI components
+ ├─ sections/       # Hero, Skills, Experience, Work, AI Lab, Contact
+ ├─ assets/         # Images & icons
+ ├─ styles/         # Global styles
+ └─ main.tsx        # Application entry
